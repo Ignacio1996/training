@@ -5,7 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const directions = ["↑", "↓", "←", "→", "↖", "↗", "↘", "↙"];
 
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -17,7 +17,7 @@ function Home() {
   const [arrowChangeInterval, setArrowChangeInterval] = useState(1);
 
   useEffect(() => {
-    let interval = null;
+    let interval: any = null;
 
     if (active) {
       interval = setInterval(() => {
